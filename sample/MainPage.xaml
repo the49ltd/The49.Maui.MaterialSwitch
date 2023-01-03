@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="The49.Maui.MaterialSwitch.Sample.MainPage">
+
+    <VerticalStackLayout Spacing="16" Padding="32">
+        <Grid ColumnDefinitions="*, Auto">
+            <Label Text="Default" VerticalOptions="Center" />
+            <Switch Grid.Column="1" />
+        </Grid>
+        <Grid ColumnDefinitions="*, Auto">
+            <Label Text="Toggled" VerticalOptions="Center" />
+            <Switch Grid.Column="1" IsToggled="True" />
+        </Grid>
+        <Grid ColumnDefinitions="*, Auto">
+            <Label Text="Disabled" VerticalOptions="Center" />
+            <Switch Grid.Column="1" IsEnabled="False" />
+        </Grid>
+        <Grid ColumnDefinitions="*, Auto">
+            <Label Text="Custom colors" VerticalOptions="Center" />
+            <Switch Grid.Column="1" ThumbColor="Salmon" OnColor="HotPink" />
+        </Grid>
+
+    </VerticalStackLayout>
+
+</ContentPage>
